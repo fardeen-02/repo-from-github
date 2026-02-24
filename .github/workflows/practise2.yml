@@ -1,0 +1,21 @@
+name: practise workflow-2
+
+on: 
+  push:
+    branches: 
+      - practise- workflow-2
+
+jobs:
+  explore-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: say-hello
+        run: echo "hello world from practise 2"
+
+      - name: show branch name
+        run: echo "branch is $GITHUB_REF"
+
+      - name: list all files
+        run: Is -Ia
+      
