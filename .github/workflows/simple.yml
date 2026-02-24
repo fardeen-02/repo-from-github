@@ -1,16 +1,15 @@
-name: My first workflow
+name: My First Workflow
 
-on: 
+on:
   push:
 
 jobs:
   say-hello:
-   runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
 
-   steps:
-     - uses: Print message
-       run : echo "hello fardeen ,CI is working"
+    steps:
+      - name: Print Message
+        run: echo "Hello Fardeen! CI is working 🚀"
 
-     - uses: print date
-       run : date
-     
+      - name: Print Date
+        run: date
