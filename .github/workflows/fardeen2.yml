@@ -1,0 +1,23 @@
+name: fardeen practise Workflow 2
+
+on:
+  push:
+    branches:
+      - practice-workflow-2
+
+jobs:
+  explore-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Say Hello
+        run: echo "Hello from second workflow 🚀"
+
+      - name: Show Branch Name
+        run: echo "Branch is $GITHUB_REF"
+
+      - name: List Files
+        run: ls -la
+
+      - name: Finish
+        run: echo "Workflow completed successfully ✅"
